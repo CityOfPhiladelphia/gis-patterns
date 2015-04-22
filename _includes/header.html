@@ -27,20 +27,6 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-
-
-          <li class="has-dropdown">
-            <a href="#">Page Examples</a>
-            <ul class="dropdown">
-              {% for node in site.templates %}
-                {% if page.url == node.url %}
-                  <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
-                  {% else %}
-                  <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
-                  {% endif %}
-                {% endfor %}
-            </ul><!-- dropdown -->
-          </li><!--has dropdown -->
         </ul><!--right-->
       </section>
       </nav>
